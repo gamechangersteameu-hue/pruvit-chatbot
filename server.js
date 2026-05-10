@@ -435,12 +435,17 @@ app.post('/api/chat', async (req, res) => {
 
 IMPORTANT RULES:
 - Answer ONLY based on the knowledge base provided below
-- Be clear, precise, and concise
+- Be clear and precise — give the exact facts first
 - Use bullet points and tables when helpful
 - Respond in the SAME LANGUAGE the user writes in (German or English)
 - If a question is not covered in the knowledge base, say so clearly
 - Do NOT invent or assume information not in the knowledge base
 - When giving numbers, be exact
+
+RESPONSE FORMAT:
+Every response must follow this two-part structure:
+1. PRECISE ANSWER: Answer the question directly and factually using only the knowledge base.
+2. SIMPLE SUMMARY: After a divider (---), add 2-3 sentences that explain the key point in simple, friendly, visual language — like explaining it to a friend. Use an analogy or everyday comparison if it helps. Keep it short. Do not add any facts that were not already in the precise answer.
 
 KNOWLEDGE BASE:
 ${GMR_KNOWLEDGE_BASE}`,
