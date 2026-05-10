@@ -20,38 +20,25 @@
     }
 
     header {
-      background: #0057a8;
+      background: #111111;
       color: white;
-      padding: 16px 24px;
+      padding: 14px 24px;
       display: flex;
       align-items: center;
-      gap: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
-    .logo-circle {
-      width: 42px;
-      height: 42px;
-      background: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      color: #0057a8;
-      font-size: 15px;
-      flex-shrink: 0;
-    }
-
-    header h1 {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.2;
+    .header-logo {
+      height: 36px;
+      width: auto;
+      filter: invert(1);
     }
 
     header p {
       font-size: 13px;
-      opacity: 0.85;
+      opacity: 0.6;
+      color: white;
     }
 
     .chat-wrapper {
@@ -271,11 +258,8 @@
 <body>
 
 <header>
-  <div class="logo-circle">GMR</div>
-  <div>
-    <h1>Prüvit GMR Assistant</h1>
-    <p>Growth Market Royalties — Q&amp;A</p>
-  </div>
+  <img src="/Gamechangers Logo800.jpg" alt="Game Changers" class="header-logo">
+  <p>GMR Assistant</p>
 </header>
 
 <div class="chat-wrapper">
